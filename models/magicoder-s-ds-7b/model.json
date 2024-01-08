@@ -1,17 +1,23 @@
 {
     "source_url": "https://huggingface.co/TheBloke/Magicoder-S-DS-6.7B-GGUF/resolve/main/magicoder-s-ds-6.7b.Q4_K_M.gguf",
-    "id": "magicoder-s-ds7b",
+    "id": "magicoder-s-ds-7b",
     "object": "model",
     "name": "Magicoder 7B Q4",
     "version": "1.0",
-    "description": "Magicoder is a model family, a novel approach to enlightening LLMs with open-source code snippets for generating low-bias and high-quality instruction data for code.",
+    "description": "Magicoder is trained on open-source code snippets for generating low-bias and high-quality code.",
     "format": "gguf",
     "settings": {
       "ctx_len": 4096,
       "prompt_template": "@@ Instruction\n{prompt}\n@@ Response"
     },
     "parameters": {
-      "max_tokens": 4096
+      "temperature": 0.7,
+      "top_p": 0.95,
+      "stream": true,
+      "max_tokens": 4096,
+      "stop": [],
+      "frequency_penalty": 0,
+      "presence_penalty": 0
     },
     "metadata": {
       "author": "Ise-uiuc",
